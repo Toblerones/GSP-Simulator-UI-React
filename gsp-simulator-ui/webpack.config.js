@@ -1,4 +1,14 @@
+var webpack = require('webpack');
+
 module.exports = {
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            Popper: ['popper.js', 'default']
+        })
+    ],
     entry:[
         './src/index.js'
     ],
@@ -7,4 +17,5 @@ module.exports = {
         publicPath: "/assets/",
         filename: 'bundle.js'
     }
+
 };

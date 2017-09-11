@@ -49,13 +49,20 @@
   "devDependencies": {
     "babel-loader": "^7.1.1",
     "bootstrap": "4.0.0-alpha.6",
+    "bootstrap-css": "^4.0.0-alpha.5",
     "bootstrap-toggle": "^2.2.2",
+    "css-loader": "^0.28.4",
     "exports-loader": "^0.6.4",
     "imports-loader": "^0.7.1",
     "jquery": "^3.2.1",
+    "node-sass": "^4.5.3",
     "popper": "^1.0.0",
     "react-router-dom": "^4.2.2",
-    "tether": "^1.4.0"
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "tether": "^1.4.0",
+    "url-loader": "^0.5.9"
   },
   "jest": {
     "collectCoverageFrom": [

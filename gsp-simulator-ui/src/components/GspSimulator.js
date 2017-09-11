@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link } from 'react-router-dom'
 import logo from '../images/logo.svg';
 import './GspSimulator.css';
 
@@ -10,9 +11,12 @@ export class GspSimulator extends Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h2>Welcome to React</h2>
                 </div>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
+                <div >
+                    <Link to ={'/UserKyc'}  activeClassName="active">Go KycForm</Link>
+                </div>
+                <div >
+                    <Link to ={'/UserShortForm'}  activeClassName="active">Go ShortForm</Link>
+                </div>
             </div>
         );
     }

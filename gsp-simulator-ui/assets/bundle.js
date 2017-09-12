@@ -74,7 +74,7 @@ module.exports = __webpack_require__(1);
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: /Users/toblerones/Development/wkspc/GSP-Simulator-UI-React/gsp-simulator-ui/src/index.js Unexpected token (9:16)\nYou may need an appropriate loader to handle this file type.\n| import 'tether';\n| \n| ReactDOM.render(<App/>, document.getElementById('root'));\n| registerServiceWorker();\n| ");
+throw new Error("Module parse failed: C:\\tobs\\wkspc\\GIT_TOB\\GSP-Simulator-UI-React\\gsp-simulator-ui\\src\\index.js Unexpected token (10:16)\nYou may need an appropriate loader to handle this file type.\n| import 'tether';\r\n| \r\n| ReactDOM.render(<App/>, document.getElementById('root'));\r\n| registerServiceWorker();\r\n| ");
 
 /***/ })
 /******/ ]);

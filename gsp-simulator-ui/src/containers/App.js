@@ -5,7 +5,6 @@ import {GspSimulator} from '../components/GspSimulator';
 import {UserKyc} from '../components/UserKyc';
 import {UserShortForm} from '../components/UserShortForm';
 
-
 class App extends Component {
   render() {
     return (

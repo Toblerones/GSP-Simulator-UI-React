@@ -6,14 +6,15 @@ export class UserShortForm extends Component {
     render() {
         return (
             <div >
-                    <input type="checkbox" checked data-toggle="toggle" />
+
+
+
+
 
                 Customer Number <input type="text" name="customerNumber"/> <br/>
-                Cam Level
-                <select>
-                    <option value="30">Cam 30</option>
-                    <option value="40">Cam 40</option>
-                </select>
+                Cam Level    
+                <label className="checkbox"><input type="checkbox" data-toggle="toggle" data-on="30" data-off="40" data-onstyle="primary" data-offstyle="danger"/></label>
+
                 <br/>
                 Target URL <input type="text" name="targetUrl"/> <br/>
 

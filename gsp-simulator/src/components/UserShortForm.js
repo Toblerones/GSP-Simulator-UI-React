@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {Toggle} from './Toggle';
 require('./UserShortForm.css')
 
-export class UserShortForm extends Component {
+class UserShortForm extends Component {
 
     render() {
-
+        const {getShortFormLink, ssoLink} = this.props;
         return (
             <div >
                 <input type="text" name="cin" className="question" id="nme" required autoComplete="off" />
@@ -15,15 +15,21 @@ export class UserShortForm extends Component {
 
                 <Toggle activeLabel={"CAM 40"} deactiveLabel={"CAM 30"} activeColor={"#17cae6"} deactiveColor={"#17cae6"} />
 
-                <input
-                    type="button"
-                    value="Send"
-                    onClick={() => {
-                        this.sendShortFormRequest()
-                    }}
-                />
+                <button onClick={() => {getShortFormLink()}}>Go</button>
+                <br />
+                <br />
+                <button onClick={getShortFormLink}>Get Link with Token</button>
+                <br />
+                Link: {ssoLink}
             </div>
         );
     }
 }
 
+UserShortForm.propTypes = {
+    getShortFormLink: PropTypes.func,
+    ssoLink: PropTypes.string
+
+}
+
+export default UserShortForm

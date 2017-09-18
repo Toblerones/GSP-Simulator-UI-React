@@ -10,7 +10,7 @@ import {
     deleteEntity
 } from "redux-json-api"
 import sendReq from "../api"
-import {UserShortForm} from "../components/UserShortForm"
+import UserShortForm from "../components/UserShortForm"
 
 function sendShortFormRequest(e) {
     e.preventDefault();

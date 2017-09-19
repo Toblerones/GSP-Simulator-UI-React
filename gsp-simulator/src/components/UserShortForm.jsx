@@ -5,7 +5,7 @@ require('./UserShortForm.css')
 class UserShortForm extends Component {
 
     render() {
-        const {getShortFormLink, ssoLink} = this.props;
+        const {getShortFormLink, ssoLink, cin, tUrl} = this.props;
         return (
             <div >
                 <input type="text" name="cin" className="question" id="nme" required autoComplete="off" />
@@ -15,7 +15,7 @@ class UserShortForm extends Component {
 
                 <Toggle activeLabel={"CAM 40"} deactiveLabel={"CAM 30"} activeColor={"#17cae6"} deactiveColor={"#17cae6"} />
 
-                <button onClick={() => {getShortFormLink()}}>Go</button>
+                <button onClick={getShortFormLink}>Go</button>
                 <br />
                 <br />
                 <button onClick={getShortFormLink}>Get Link with Token</button>
@@ -27,9 +27,10 @@ class UserShortForm extends Component {
 }
 
 UserShortForm.propTypes = {
-    getShortFormLink: PropTypes.func,
-    ssoLink: PropTypes.string
-
+    getShortFormLink: PropTypes.func.isRequired,
+    ssoLink: PropTypes.string,
+    cin: PropTypes.string,
+    tUrl: PropTypes.string
 }
 
 export default UserShortForm
